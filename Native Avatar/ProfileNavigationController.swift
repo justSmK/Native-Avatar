@@ -13,7 +13,7 @@ open class ProfileNavigationController: UINavigationController, UINavigationCont
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+        view.backgroundColor = .systemBackground
         
         avatarImage.image = .init(systemName: "person.crop.circle.fill")
         avatarImage.contentMode = .scaleAspectFit

@@ -19,13 +19,14 @@ class ScrollController: UIViewController {
         scrollView.contentSize = .init(width: view.frame.width, height: 2000)
 
         view.addSubview(scrollView)
-        NSLayoutConstraint.activate([
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            scrollView.widthAnchor.constraint(equalTo: view.widthAnchor)
-        ])
+        view = scrollView
+//        NSLayoutConstraint.activate([
+//            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+//            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+//            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+//            scrollView.widthAnchor.constraint(equalTo: view.widthAnchor)
+//        ])
     }
     
 }
